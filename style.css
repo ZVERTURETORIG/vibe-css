@@ -1,12 +1,13 @@
+/* DevTools при 375px: кнопка padding 14px 20px; итоговая ширина 295px. */
 /* Общая геометрия: рамки и внутренние отступы входят в заданную ширину. */
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --accent: #9852c4;
-  --accent-hover: #7e3fa8;
-  --accent-soft: #f3e8ff;
+  --accent: #0f8a68;
+  --accent-hover: #0b6c53;
+  --accent-soft: #dcfce7;
   --ink: #18181b;
   --muted: #71717a;
 }
@@ -70,7 +71,7 @@ body {
 }
 
 .product-info {
-  padding: 20px;
+  padding: 24px;
 }
 
 .product-tag {
@@ -99,7 +100,7 @@ body {
 
 .product-price {
   margin: 0 0 20px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
 }
 
