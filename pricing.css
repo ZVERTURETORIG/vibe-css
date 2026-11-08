@@ -47,7 +47,7 @@
 .product-section-heading h2 {
   margin: 0 0 10px;
   color: #fafafa;
-  font-size: clamp(30px, 4vw, 42px);
+  font-size: clamp(28px, 4vw, 36px);
   line-height: 1.12;
 }
 
