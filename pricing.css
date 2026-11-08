@@ -1,5 +1,5 @@
 /* Отличия первой версии от макета и ручные исправления:
-   1. Фон был белым — стал тёмным градиентом.
+   1. Фон был белым — стал чёрным.
    2. Заголовок был 40px — уменьшен до 36px.
    3. Лишняя строка над заголовком удалена.
    4. Скругление карточек было 24px — уменьшено до 16px.
@@ -16,7 +16,7 @@
   --purple-dark: #4c1d95;
   --ink: #f4f4f5;
   --muted: #b6b2c2;
-  --panel: rgba(19, 17, 29, 0.9);
+  --panel: #111111;
 }
 
 .pricing-page {
@@ -64,7 +64,7 @@
   grid-template-columns: minmax(0, 1fr);
   gap: 14px;
   width: 100%;
-  max-width: 1120px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
@@ -72,10 +72,10 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  padding: 28px;
+  padding: 22px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
+  border: 1px solid #292929;
+  border-radius: 14px;
   color: #f4f4f5;
   background: var(--panel);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
@@ -84,7 +84,7 @@
 
 .plan-heading h2 {
   margin: 0 0 7px;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 1.2;
 }
 
@@ -99,13 +99,13 @@
   display: flex;
   align-items: baseline;
   gap: 8px;
-  margin: 22px 0 24px;
+  margin: 18px 0 20px;
   white-space: nowrap;
 }
 
 .plan-price strong {
   color: #fafafa;
-  font-size: clamp(32px, 3vw, 40px);
+  font-size: clamp(28px, 2.7vw, 34px);
   line-height: 1;
 }
 
@@ -116,8 +116,8 @@
 
 .plan-features {
   display: grid;
-  gap: 13px;
-  margin: 0 0 28px;
+  gap: 11px;
+  margin: 0 0 22px;
   padding: 0;
   list-style: none;
 }
@@ -126,7 +126,7 @@
   position: relative;
   padding-left: 24px;
   color: #e4e4e7;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.45;
 }
 
@@ -142,7 +142,7 @@
   display: block;
   width: 100%;
   margin-top: auto;
-  padding: 13px 18px;
+  padding: 12px 16px;
   border: 1px solid rgba(192, 132, 252, 0.85);
   border-radius: 10px;
   color: #eadcff;
@@ -163,18 +163,18 @@
 .plan-featured {
   position: relative;
   z-index: 1;
-  border-color: rgba(216, 180, 254, 0.5);
-  border-radius: 20px;
+  border-color: #a78bfa;
+  border-radius: 16px;
   color: #ffffff;
-  background: linear-gradient(140deg, #8b5cf6 0%, #6d28d9 52%, #3b176f 100%);
-  box-shadow: 0 26px 75px rgba(91, 33, 182, 0.42);
+  background: #6d28d9;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.44);
   cursor: pointer;
   transition: box-shadow 250ms ease, transform 250ms ease;
 }
 
 .plan-featured:hover {
-  box-shadow: 0 30px 88px rgba(139, 92, 246, 0.52);
-  transform: translateY(-3px);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.58);
+  transform: translateY(-2px);
 }
 
 .plan-expander {
@@ -270,6 +270,7 @@
 }
 
 .product-section {
+  max-width: 1040px;
   margin: 96px auto 0;
 }
 
@@ -279,12 +280,12 @@
 
 .product-section .page {
   max-width: 1040px;
-  padding: 0 16px;
+  padding: 0;
 }
 
 @media (min-width: 1120px) {
   .plans {
-    grid-template-columns: minmax(0, 0fr) minmax(320px, 440px) minmax(0, 0fr);
+    grid-template-columns: minmax(0, 0fr) minmax(280px, 360px) minmax(0, 0fr);
     align-items: center;
     justify-content: center;
     gap: 0;
@@ -310,12 +311,12 @@
 
   .plans:has(.plan-expander:checked) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+    gap: 16px;
   }
 
   .plans:has(.plan-expander:checked) .plan-side {
     max-height: 560px;
-    padding: 28px;
+    padding: 22px;
     border-block-width: 1px;
     opacity: 1;
     visibility: visible;
@@ -333,7 +334,7 @@
 
   .plans:not(:has(.plan-expander:checked)) .plan-side {
     max-height: 0;
-    padding: 0 28px;
+    padding: 0 22px;
     border-block-width: 0;
   }
 }
