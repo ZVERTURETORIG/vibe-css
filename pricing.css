@@ -13,33 +13,25 @@ body {
   min-width: 320px;
   margin: 0;
   color: var(--ink);
-  background: #ffffff;
-  font-family: Arial, sans-serif;
+  background: #faf7fc;
+  font-family: Inter, system-ui, Arial, sans-serif;
 }
 
 .pricing-page {
   min-height: 100vh;
-  padding: 42px 20px 64px;
+  padding: 48px 20px 64px;
 }
 
-.pricing-header {
+ .pricing-header {
   max-width: 760px;
-  margin: 0 auto 40px;
+  margin: 0 auto 36px;
   text-align: center;
 }
 
-.eyebrow {
-  margin: 0 0 8px;
-  color: var(--purple);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
 
 .pricing-header h1 {
   margin: 0 0 8px;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1.15;
 }
 
@@ -63,9 +55,9 @@ body {
   flex: 1;
   flex-direction: column;
   min-width: 0;
-  padding: 36px;
+  padding: 28px;
   border: 1px solid #dedee3;
-  border-radius: 24px;
+  border-radius: 16px;
   background: #ffffff;
 }
 
@@ -91,7 +83,7 @@ body {
 }
 
 .plan-price strong {
-  font-size: 42px;
+  font-size: 40px;
   line-height: 1;
 }
 
@@ -128,7 +120,7 @@ body {
   margin-top: auto;
   padding: 14px 20px;
   border: 2px solid var(--purple);
-  border-radius: 12px;
+  border-radius: 10px;
   color: var(--purple);
   background: #ffffff;
   font: inherit;
@@ -143,12 +135,12 @@ body {
 
 .plan-featured {
   position: relative;
-  padding: 40px;
+  padding: 28px;
+  border-radius: 16px;
   border-color: var(--purple);
   color: #ffffff;
   background: var(--purple);
   box-shadow: 0 24px 55px rgba(152, 82, 196, 0.28);
-  transform: translateY(-10px);
 }
 
 .popular-label {
