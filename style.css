@@ -1,23 +1,27 @@
-/* DevTools при 375px: кнопка padding 14px 20px; итоговая ширина 295px. */
-/* Общая геометрия: рамки и внутренние отступы входят в заданную ширину. */
+/* Визуальная система карточки товара для большого сайта. */
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --accent: #0f8a68;
-  --accent-hover: #0b6c53;
-  --accent-soft: #dcfce7;
-  --ink: #18181b;
-  --muted: #71717a;
+  --accent: #10b981;
+  --accent-hover: #059669;
+  --accent-soft: rgba(16, 185, 129, 0.14);
+  --ink: #f4f4f5;
+  --muted: #a1a1aa;
 }
 
 body {
   min-width: 320px;
   margin: 0;
   color: var(--ink);
-  background: #f4f4f5;
-  font-family: Arial, sans-serif;
+  background-color: #05050a;
+  background-image:
+    radial-gradient(ellipse at 14% 6%, rgba(124, 58, 237, 0.25), transparent 36%),
+    radial-gradient(ellipse at 88% 46%, rgba(16, 185, 129, 0.12), transparent 38%),
+    linear-gradient(135deg, #05050a 0%, #14101f 52%, #050509 100%);
+  background-attachment: fixed;
+  font-family: Inter, system-ui, Arial, sans-serif;
 }
 
 .page {
@@ -29,17 +33,19 @@ body {
 
 .product-card {
   overflow: hidden;
-  background: #ffffff;
-  border: 1px solid #e4e4e7;
-  border-radius: 18px;
-  box-shadow: 0 12px 36px rgba(24, 24, 27, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  color: #f4f4f5;
+  background: rgba(17, 15, 26, 0.92);
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(16px);
 }
 
 .product-media {
   position: relative;
   height: 280px;
   margin: 0;
-  background: #e7e5e4;
+  background: #292333;
 }
 
 .product-photo {
@@ -78,8 +84,9 @@ body {
   display: inline-block;
   margin: 0 0 10px;
   padding: 5px 11px;
+  border: 1px solid rgba(52, 211, 153, 0.24);
   border-radius: 999px;
-  color: var(--accent-hover);
+  color: #a7f3d0;
   background: var(--accent-soft);
   font-size: 13px;
   font-weight: 700;
@@ -87,19 +94,21 @@ body {
 
 .product-title {
   margin: 0 0 10px;
+  color: #fafafa;
   font-size: 26px;
   line-height: 1.2;
 }
 
 .product-description {
   margin: 0 0 20px;
-  color: #52525b;
+  color: #c4c4cc;
   font-size: 16px;
   line-height: 1.55;
 }
 
 .product-price {
   margin: 0 0 20px;
+  color: #fafafa;
   font-size: 28px;
   font-weight: 700;
 }
@@ -115,9 +124,9 @@ body {
 .product-button {
   width: 100%;
   padding: 14px 20px;
-  border: 0;
-  border-radius: 10px;
-  color: #ffffff;
+  border: 1px solid rgba(52, 211, 153, 0.72);
+  border-radius: 11px;
+  color: #052e24;
   background: var(--accent);
   font: inherit;
   font-weight: 700;
@@ -126,7 +135,7 @@ body {
 }
 
 .product-button:hover {
-  background: var(--accent-hover);
+  background: #34d399;
 }
 
 .product-button:active {
@@ -134,15 +143,11 @@ body {
 }
 
 .product-button:focus-visible {
-  outline: 3px solid #c4b5fd;
+  outline: 3px solid #a7f3d0;
   outline-offset: 3px;
 }
 
 @media (min-width: 768px) {
-  .page {
-    padding: 48px 32px;
-  }
-
   .product-card {
     display: flex;
     align-items: stretch;

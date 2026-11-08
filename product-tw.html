@@ -6,10 +6,10 @@
   <title>Кофемолка ручная «Жезл» — Tailwind</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="min-w-[320px] bg-stone-100 text-stone-900 antialiased">
+<body class="min-w-[320px] bg-[linear-gradient(135deg,#05050a_0%,#14101f_52%,#050509_100%)] text-stone-100 antialiased">
   <main class="mx-auto max-w-5xl px-4 py-8 md:px-8 md:py-12">
-    <!-- Карточка: overflow-hidden обрезает содержимое по скруглению; rounded-2xl даёт радиус 16px; bg-white задаёт белый фон; shadow-lg добавляет тень; md:flex ставит фото и текст в ряд от 768px. -->
-    <article class="overflow-hidden rounded-2xl bg-white shadow-lg md:flex">
+    <!-- Карточка: overflow-hidden обрезает содержимое по скруглению; rounded-2xl даёт радиус 16px; bg-stone-900/95 задаёт тёмный фон; shadow-xl добавляет тень; md:flex ставит фото и текст в ряд от 768px. -->
+    <article class="overflow-hidden rounded-2xl border border-white/10 bg-stone-900/95 shadow-xl md:flex">
       <figure class="relative h-64 md:h-[440px] md:w-1/2">
         <!-- Фото: block убирает зазор строчного изображения; h-full и w-full растягивают его на фигуру; object-cover заполняет фигуру без деформации с обрезкой краёв. -->
         <img class="block h-full w-full object-cover" src="images/product.jpg" alt="Старинная ручная кофемолка на светлом фоне">
@@ -19,14 +19,14 @@
         </figcaption>
       </figure>
       <div class="p-6 md:flex md:w-1/2 md:flex-col md:justify-center md:p-10">
-        <p class="mb-3 inline-block w-fit rounded-full bg-emerald-100 px-3 py-1 text-sm font-bold text-emerald-800">Хит продаж</p>
+        <p class="mb-3 inline-block w-fit rounded-full border border-emerald-400/20 bg-emerald-500/15 px-3 py-1 text-sm font-bold text-emerald-200">Хит продаж</p>
         <!-- Заголовок: mb-3 даёт отступ 12px; text-2xl задаёт 24px; font-bold делает текст жирным; leading-tight уменьшает межстрочный интервал. -->
-        <h1 class="mb-3 text-2xl font-bold leading-tight">Кофемолка ручная «Жезл»</h1>
-        <p class="mb-5 leading-relaxed text-stone-600">Керамические жернова и 15 степеней помола. Подходит для эспрессо и турки.</p>
+        <h1 class="mb-3 text-2xl font-bold leading-tight text-stone-50">Кофемолка ручная «Жезл»</h1>
+        <p class="mb-5 leading-relaxed text-stone-300">Керамические жернова и 15 степеней помола. Подходит для эспрессо и турки.</p>
         <!-- Цена: mb-5 даёт отступ 20px; text-3xl задаёт 30px; font-bold делает цену жирной. Старая цена использует ml-2 для отступа 8px; text-base задаёт 16px; font-normal снимает жирность; text-stone-400 делает серой; line-through перечёркивает. -->
-        <p class="mb-5 text-3xl font-bold">24 990 ₸ <span class="ml-2 text-base font-normal text-stone-400 line-through">29 990 ₸</span></p>
-        <!-- Кнопка: w-full занимает всю ширину; cursor-pointer показывает курсор; rounded-xl увеличивает скругление; bg-emerald-600 задаёт зелёный фон; px-6 и py-4 дают отступы 24px и 16px; font-bold делает текст жирным; text-white задаёт белый текст; transition сглаживает смену цвета; hover:bg-emerald-700 меняет цвет при наведении; md:w-auto снимает полную ширину от 768px. -->
-        <button class="w-full cursor-pointer rounded-xl bg-emerald-600 px-6 py-4 font-bold text-white transition hover:bg-emerald-700 md:w-auto" type="button">В корзину</button>
+        <p class="mb-5 text-3xl font-bold text-stone-50">24 990 ₸ <span class="ml-2 text-base font-normal text-stone-400 line-through">29 990 ₸</span></p>
+        <!-- Кнопка: w-full занимает всю ширину; cursor-pointer показывает курсор; rounded-xl увеличивает скругление; bg-emerald-600 задаёт зелёный фон; px-6 и py-4 дают отступы 24px и 16px; font-bold делает текст жирным; text-emerald-950 задаёт тёмный текст; transition сглаживает смену цвета; hover:bg-emerald-500 меняет цвет при наведении; md:w-auto снимает полную ширину от 768px. -->
+        <button class="w-full cursor-pointer rounded-xl bg-emerald-600 px-6 py-4 font-bold text-emerald-950 transition hover:bg-emerald-500 md:w-auto" type="button">В корзину</button>
       </div>
     </article>
   </main>

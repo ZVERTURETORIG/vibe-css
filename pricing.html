@@ -3,22 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#faf7fc">
-  <title>Абонементы фитнес-клуба</title>
+  <meta name="theme-color" content="#08070d">
+  <title>Абонементы и товары</title>
   <link rel="stylesheet" href="pricing.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="pricing-page">
     <header class="pricing-header">
+      <p class="eyebrow">Тренируйся в своём ритме</p>
       <h1>Абонементы фитнес-клуба</h1>
       <p class="pricing-intro">Первое занятие — бесплатно. Оплата через Kaspi.</p>
     </header>
 
     <section class="plans" aria-label="Тарифы фитнес-клуба">
-      <article class="plan">
+      <article class="plan plan-featured">
+        <input class="plan-expander" type="checkbox" aria-label="Показать остальные тарифы по сторонам" aria-controls="morning-plan personal-plan">
+        <span class="popular-label">Популярный</span>
+        <div class="plan-heading">
+          <h2>Безлимит</h2>
+          <p>Любое время. Все зоны.</p>
+        </div>
+        <p class="plan-price"><strong>19 900 ₸</strong><span>/ мес</span></p>
+        <ul class="plan-features">
+          <li>Зал без ограничений по времени</li>
+          <li>Групповые занятия</li>
+          <li>Бассейн 2 раза в неделю</li>
+          <li>Заморозка 14 дней</li>
+        </ul>
+        <span class="plan-button featured-action">
+          <span class="hint-closed">Нажми чтобы увидеть другие тарифы</span>
+          <span class="hint-open">Нажми чтобы свернуть тарифы</span>
+        </span>
+      </article>
+
+      <article class="plan plan-side plan-side-left" id="morning-plan">
         <div class="plan-heading">
           <h2>Утро</h2>
-          <p>Для тех, кто тренируется до работы</p>
+          <p>Для тех кто тренируется до работы</p>
         </div>
         <p class="plan-price"><strong>9 900 ₸</strong><span>/ мес</span></p>
         <ul class="plan-features">
@@ -29,23 +51,7 @@
         <button class="plan-button" type="button">Выбрать</button>
       </article>
 
-      <article class="plan plan-featured">
-        <p class="popular-label">Популярный</p>
-        <div class="plan-heading">
-          <h2>Безлимит</h2>
-          <p>Любое время, все зоны</p>
-        </div>
-        <p class="plan-price"><strong>19 900 ₸</strong><span>/ мес</span></p>
-        <ul class="plan-features">
-          <li>Зал без ограничений по времени</li>
-          <li>Групповые занятия</li>
-          <li>Бассейн 2 раза в неделю</li>
-          <li>Заморозка 14 дней</li>
-        </ul>
-        <button class="plan-button" type="button">Выбрать</button>
-      </article>
-
-      <article class="plan">
+      <article class="plan plan-side plan-side-right" id="personal-plan">
         <div class="plan-heading">
           <h2>Персональный</h2>
           <p>С личным тренером</p>
@@ -58,6 +64,32 @@
         </ul>
         <button class="plan-button" type="button">Выбрать</button>
       </article>
+    </section>
+
+    <section class="product-section" aria-labelledby="product-section-title">
+      <header class="product-section-heading">
+        <p class="eyebrow">Выбор тренера</p>
+        <h2 id="product-section-title">Кофемолка месяца</h2>
+        <p>Любимый кофе после хорошей тренировки.</p>
+      </header>
+      <div class="page">
+        <article class="product-card" aria-labelledby="product-title">
+          <figure class="product-media">
+            <img class="product-photo" src="images/product.jpg" alt="Старинная ручная кофемолка на светлом фоне">
+            <figcaption class="photo-credit">
+              Фото <a href="https://commons.wikimedia.org/wiki/File:Coffee_Grinder_Zassenhaus.jpg">© Benjamin Hell</a> ·
+              <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+            </figcaption>
+          </figure>
+          <div class="product-info">
+            <p class="product-tag">Хит продаж</p>
+            <h2 class="product-title" id="product-title">Кофемолка ручная «Жезл»</h2>
+            <p class="product-description">Керамические жернова и 15 степеней помола. Подходит для эспрессо и турки.</p>
+            <p class="product-price">24 990 ₸ <span class="product-old-price">29 990 ₸</span></p>
+            <button class="product-button" type="button">В корзину</button>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 </body>
